@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <main class="main-container">
+
+    <!-- Search Input Section -->
+    <header class="input-container">
+      <input type="text" class="city-input" placeholder="Search city" />
+      <button class="search-btn">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+    </header>
+
+    <!-- Weather Information Section -->
+    <section class="weather-info">
+      <div class="location-data-container">
+        <div class="location">
+          <span class="material-symbols-outlined">location_on</span>
+          <h4 class="country-txt">Pakistan</h4>
+        </div>
+        <h5 class="currrent-data-txt regular-txt">Wed, 7 Aug</h5>
+      </div>
+
+      <div class="weather-summary-container">
+        <img src="assets/weather/clouds.svg" class="weather-summary-img" />
+        <div class="weather-summary-info">
+          <h1 class="temp-txt">29 °C</h1>
+          <h3 class="condition-txt regular-txt">Clouds</h3>
+        </div>
+      </div>
+
+      <div class="weather-condtition-container">
+        <div class="condition-item">
+          <span class="material-symbols-outlined">water_drop</span>
+          <div class="condition-info">
+            <h5 class="regular-txt">Humidity</h5>
+            <h5 class="Humidity-value-txt">55%</h5>
+          </div>
+        </div>
+        <div class="condition-item">
+          <span class="material-symbols-outlined">air</span>
+          <div class="condition-info">
+            <h5 class="regular-txt">Wind Speed</h5>
+            <h5 class="Wind-value-txt">2 M/s</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast-items-container">
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+          <img src="assets/weather/thunderstorm.svg" class="forecast-item-img" />
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+        <!-- Add more items dynamically -->
+      </div>
+    </section>
+
+    <!-- Search Message -->
+    <section class="search-city section-message">
+      <img src="assets/message/search-city.png" class="message-img" />
+      <h4>Search City</h4>
+      <h4 class="regular-txt">Find Weather Condition of your City</h4>
+    </section>
+
+
+    <section class="not-found-city section-message">
+      <img src="assets/message/not-found.png" class="message-img" />
+      <h4>CITY NOT FOUND</h4>
+      <h4 class="regular-txt">Enter Valid City Name</h4>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
